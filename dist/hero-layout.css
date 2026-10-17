@@ -1,0 +1,25 @@
+.home-hero{justify-content:flex-start;gap:0;min-height:max(680px,calc(100svh - 96px));padding:45px 0 0!important}
+.hero-bracket-row{display:grid;grid-template-columns:60px minmax(0,1fr) 60px;align-items:center;gap:24px;width:100%;margin:auto 0;min-height:200px}
+.hero-bracket{font-family:Arial,sans-serif;font-size:clamp(110px,12vw,190px);font-weight:400;line-height:1;letter-spacing:-.07em;display:block}
+.hero-bracket{transform:skewX(-14deg)}
+.hero-bracket:last-child{text-align:right}
+.hero-bracket-row .hero-headline.type-headline{max-width:100%;font-size:clamp(17px,2.25vw,36px);font-weight:500;line-height:1.4;letter-spacing:-.045em;text-align:center}
+.hero-bracket-row .typing-line{width:fit-content;max-width:100%;margin-inline:auto;line-height:1.5}
+.hero-bracket-row .typing-text{color:#707070}
+html[lang=en] .hero-bracket-row .hero-headline{font-size:clamp(14px,1.8vw,29px)}
+.hero-studio-wordmark{font-size:clamp(64px,11.5vw,190px);font-weight:750;line-height:.98;letter-spacing:-.075em;width:100%;white-space:normal}
+.hero-studio-wordmark>span.wordmark-row{display:flex;justify-content:space-between;align-items:baseline;gap:.12em}
+.hero-studio-wordmark{margin-top:auto;line-height:.91;padding-bottom:0;letter-spacing:-.075em}
+.wordmark-row>span{white-space:nowrap}
+.wordmark-dot{display:inline-block;width:.12em;height:.12em;background:#e6f542;margin-left:.03em;vertical-align:baseline}
+.typed-character{color:#b6b6b6;animation:ink-in .7s ease forwards}
+.typing-text{transition:opacity .4s ease}
+.typing-text.typing-reset{opacity:0}
+@keyframes ink-in{from{color:#b6b6b6}to{color:#151515}}
+.selected{padding-top:90px}
+.home-hero .hero-accent{display:none}
+.home-hero .hero-scroll{bottom:34px}
+@media(min-width:1800px){.hero-studio-wordmark{font-size:190px}}
+@media(max-width:900px){.hero-bracket-row{grid-template-columns:42px minmax(0,1fr) 42px;gap:14px}.hero-bracket{font-size:130px}.hero-studio-wordmark{font-size:11.5vw}}
+@media(max-width:620px){.home-hero{min-height:max(540px,calc(90svh - 76px));padding:30px 0 0!important}.hero-bracket-row{grid-template-columns:18px minmax(0,1fr) 18px;gap:4px;min-height:180px}.hero-bracket{font-size:72px}.hero-bracket-row .hero-headline.type-headline{font-size:clamp(12px,3.4vw,20px);font-weight:500}html[lang=en] .hero-bracket-row .hero-headline{font-size:clamp(10px,2.5vw,16px)}.hero-studio-wordmark{white-space:normal;font-size:12.5vw;line-height:.94;letter-spacing:-.075em}.selected{padding-top:65px}}
+@media(prefers-reduced-motion:reduce){.typed-character{animation:none;color:#151515}}

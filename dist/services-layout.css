@@ -1,0 +1,25 @@
+/* A narrower reading column for the Services page. */
+.service-detail-image{position:relative}
+.service-detail-image img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .7s ease}
+.service-detail-image:hover img{transform:scale(1.025)}
+.service-image-caption{position:absolute;bottom:12px;right:14px;font-size:9px;letter-spacing:.04em;color:#fff;background:rgba(0,0,0,.42);border-radius:999px;padding:5px 9px;pointer-events:none}
+.ways{width:56%;margin:70px auto 100px;padding:36px 32px 40px;background:#151515;color:#fff;border-radius:25px;display:block}
+.ways>.eyebrow{color:#aaa;margin-bottom:28px}
+.ways h2{color:#fff;font-size:clamp(27px,2.6vw,40px);line-height:1.4;margin:0 0 30px}
+.ways-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.ways-grid h3{color:#fff;font-size:17px;line-height:1.5;margin:0 0 12px}
+.ways-grid p{color:#b8b8b8;font-size:13px;line-height:1.8;margin:0}
+@media(max-width:1100px){.ways{width:70%}}
+@media(max-width:900px){.ways{width:82%;padding:32px 30px}}
+@media(max-width:620px){.ways{width:100%;padding:28px 24px;margin-top:45px;border-radius:23px}.ways-grid{grid-template-columns:1fr;gap:28px}.ways h2{font-size:28px}.service-image-caption{font-size:8px;bottom:9px;right:9px}}
+.service-detail-list{width:56%;margin-inline:auto;gap:36px}
+.service-detail{border-radius:25px;padding:10px}
+.service-detail-top{grid-template-columns:1.2fr 1fr;gap:24px;padding:30px 22px 34px}
+.service-detail-copy h2{font-size:clamp(23px,2vw,34px);margin-bottom:18px;line-height:1.35}
+.service-detail-copy p{font-size:14px;line-height:1.75}
+.service-detail-tags{gap:8px}
+.service-detail-tags span{font-size:12px;padding:11px 15px;border-radius:16px}
+.service-detail-image,.service-detail-image .placeholder{border-radius:19px}
+@media(max-width:1100px){.service-detail-list{width:70%}}
+@media(max-width:900px){.service-detail-list{width:82%}.service-detail-top{padding:28px 20px 32px;gap:22px}.service-detail-copy h2{font-size:27px}}
+@media(max-width:620px){.service-detail-list{width:100%}.service-detail-top{grid-template-columns:1fr;padding:24px 14px 28px;gap:22px}.service-detail-copy h2{font-size:26px}.service-detail-tags span{font-size:12px;padding:10px 14px}.service-detail-image,.service-detail-image .placeholder{border-radius:16px}}
