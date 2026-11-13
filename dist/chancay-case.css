@@ -1,0 +1,26 @@
+.chancay-stage{background:#e9edf1}.chancay-stage .annual-note{width:min(550px,100%)}
+.chancay-stage .annual-screen img,.chancay-dialog .annual-expanded img{display:block;width:100%;height:auto;margin:0;border:0;border-radius:0;background:#fff}
+.chancay-stage .annual-actions button{min-height:44px}.chancay-stage .annual-actions button[data-chancay-motion]{background:#fff;color:#151515}
+.chancay-stage .annual-screen:focus-visible{outline-color:#151515}
+.chancay-dialog .annual-expanded{width:min(750px,100%)}
+.chancay-qr-area{margin-bottom:28px}.chancay-qr-placeholder{width:152px;height:152px;box-sizing:border-box;margin:0 auto;background:#fff;border:1px dashed #bfc7cc;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:20px;color:#89949c;font-size:11px;text-align:center}
+.chancay-stage .chancay-qr-label{font-size:13px;margin:14px 0 0;color:#151515}
+.annual-stage.chancay-stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10%;align-items:center;padding:65px 9%}
+.chancay-stage .annual-device{grid-column:1;grid-row:1;justify-self:center;order:0}
+.chancay-stage .annual-note{grid-column:2;grid-row:1;order:0;width:100%;max-width:390px;text-align:left}
+.chancay-stage .chancay-qr-placeholder{margin-left:0;margin-right:0}
+.chancay-stage .annual-actions{justify-content:flex-start}
+.chancay-stage .annual-progress{max-width:none;margin-left:0;margin-right:0}
+.chancay-stage .annual-percent{text-align:left}
+@media(max-width:750px){.annual-stage.chancay-stage{grid-template-columns:1fr;padding:35px 7%;gap:35px}.chancay-stage .annual-device{grid-column:1;grid-row:1}.chancay-stage .annual-note{grid-column:1;grid-row:2;justify-self:center;text-align:center}.chancay-stage .chancay-qr-placeholder{margin-left:auto;margin-right:auto}.chancay-stage .annual-actions{justify-content:center}.chancay-stage .annual-percent{text-align:center}}
+
+.chancay-motion-details{background:#fff;padding:110px 10% 120px}.chancay-motion-feature{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:5%;margin-bottom:30px}.chancay-motion-details figure{margin:0;background:#f6f7f9;border:1px solid #eff0f2;border-radius:26px;padding:8%;overflow:hidden;box-sizing:border-box}.chancay-motion-details img{display:block;width:100%;height:auto;aspect-ratio:710/620;opacity:1!important;transform:none!important;visibility:visible!important}.chancay-motion-copy{padding:8%}.chancay-motion-copy h2{font-size:clamp(25px,2.6vw,40px);line-height:1.4;margin:0 0 25px;letter-spacing:-.03em}.chancay-motion-copy p{font-size:13px;line-height:1.95;color:#888;margin:0}.chancay-motion-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.chancay-motion-details figcaption{font-size:12px;color:#777;text-align:center;margin-top:24px}@media(max-width:700px){.chancay-motion-details{padding:65px 7%}.chancay-motion-feature{grid-template-columns:1fr;gap:25px}.chancay-motion-copy{padding:5% 0}.chancay-motion-grid{grid-template-columns:1fr;gap:25px}}
+
+.chancay-motion-details>.chancay-motion-copy{padding:0 0 55px;max-width:700px;margin:auto;text-align:center}.chancay-motion-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.chancay-motion-grid figure{padding:8%;height:100%}.chancay-motion-grid img{aspect-ratio:710/620;object-fit:contain}@media(max-width:700px){.chancay-motion-grid{grid-template-columns:1fr;gap:25px}}
+
+.annual-stage.chancay-stage{grid-template-columns:minmax(0,1fr);gap:35px;justify-items:center}.chancay-stage .annual-device{grid-column:1;grid-row:1}.chancay-stage .annual-note{grid-column:1;grid-row:2;text-align:center;justify-self:center}.chancay-stage .annual-actions{justify-content:center}.chancay-stage .annual-percent{text-align:center}.chancay-qr-footer{padding:0 9% 110px;background:#fff;text-align:center}.chancay-qr-footer .chancay-qr-area{margin:0}.chancay-qr-footer .chancay-qr-label{font-size:13px;margin:18px 0 0;color:#151515}@media(max-width:750px){.chancay-qr-footer{padding-bottom:65px}}
+
+
+.chancay-qr-footer{width:100%;box-sizing:border-box;background:#fff;padding:90px 9% 110px}@media(max-width:750px){.chancay-qr-footer{padding:65px 7%}}
+
+body[data-page="project"] .annual-stage.chancay-stage{background:linear-gradient(to bottom,#eef0f4 0%,#eef0f4 calc(100% - 140px),#fff 100%)!important;border-bottom-left-radius:0;border-bottom-right-radius:0;margin-bottom:0}

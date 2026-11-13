@@ -1,0 +1,19 @@
+/* Shared handset styling for all project details and nested reading dialogs. */
+body[data-page="project"] :is(.annual-device,.companion-device){background:#fff!important;border:2px solid #fff!important;padding:4px!important;border-radius:13% / 6.3%!important;overflow:hidden;box-shadow:0 14px 35px #0000000c!important;aspect-ratio:495/1024;container-type:inline-size}
+body[data-page="project"] .annual-device:before,body[data-page="project"] .annual-device:after,body[data-page="project"] :is(.annual-side-button,.annual-time,.annual-status-icons,.annual-homebar){display:none!important}
+body[data-page="project"] :is(.annual-status,.companion-status){background:#fff!important;flex:0 0 15cqw!important;height:15cqw!important;border-radius:13cqw 13cqw 0 0!important;padding:0!important;position:relative;display:grid;place-items:center}
+body[data-page="project"] .annual-island{background:#e6e6e6!important;box-shadow:none!important;width:35cqw!important;height:9cqw!important;top:4cqw!important;border-radius:30px!important}
+body[data-page="project"] .annual-island:after{display:none!important}
+body[data-page="project"] .companion-status i{background:#e6e6e6;width:35cqw;height:9cqw;border-radius:30px}
+body[data-page="project"] :is(.annual-screen,.national-original-frame,.companion-device iframe,.fliggy-phone .fliggy-reader){border:0;border-radius:0 0 12cqw 12cqw!important}
+/* WeChat projects are read within the phone; no separate expanded reader entry. */
+body[data-page="project"] :is([data-guide-expand],[data-annual-open],[data-hs-expand],.national-open){display:none!important}
+
+/* Annual report: silver-rim handset, unchanged scrolling artwork. */
+body[data-page="project"] .annual-stage{background:#eef0f4!important}
+body[data-page="project"] .annual-device{background:#050505!important;border:3px solid #c9cacc!important;padding:5px!important;box-shadow:0 0 0 1px #e4e4e5,0 14px 35px #0000000c!important}
+body[data-page="project"] .annual-status{background:#fff!important;flex-basis:13cqw!important;height:13cqw!important}
+body[data-page="project"] .annual-island{background:#000!important;width:29cqw!important;height:8.5cqw!important;top:2.5cqw!important}
+body[data-page="project"] .annual-time{display:block!important;position:absolute;left:7cqw;top:5cqw;color:#111;font-size:3cqw}
+body[data-page="project"] .annual-status-icons{display:flex!important;position:absolute;right:7cqw;top:5cqw}
+body[data-page="project"] .annual-screen{border-radius:0 0 12cqw 12cqw!important}

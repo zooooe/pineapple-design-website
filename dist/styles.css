@@ -218,3 +218,24 @@ main{padding-inline:0}
  .project-info{padding-top:22px}
  .hero-accent{right:0}
 }
+/* Shared project-list cover: pale background and a centered phone crop. */
+.wechat-phone-cover{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:22px;background:linear-gradient(135deg,#fff 5%,#f5f5f8 65%,#f0f0f4);container-type:inline-size}
+.wechat-cover-device{position:absolute;top:9%;left:50%;transform:translateX(-50%);width:31cqw;aspect-ratio:495/1024;box-sizing:border-box;padding:.7cqw;border:.18cqw solid #77727b;border-radius:5.4cqw;background:#080808;box-shadow:inset 0 0 0 .14cqw #c0bdc3,inset 0 0 0 .28cqw #29272b,0 .8cqw 2.2cqw #10102012;display:flex;flex-direction:column}
+.wechat-cover-status{position:relative;flex:0 0 4.4cqw;background:#fff;border-radius:4.5cqw 4.5cqw 0 0}.wechat-cover-status i{position:absolute;left:50%;top:.75cqw;transform:translateX(-50%);width:9cqw;height:2.7cqw;border-radius:3cqw;background:#000}.wechat-cover-status i:after{content:'';position:absolute;right:12%;top:38%;width:.6cqw;height:.6cqw;border-radius:50%;background:radial-gradient(circle,#26233d,#09090f 70%)}
+.wechat-cover-screen{flex:1;min-height:0;overflow:hidden;background:#fff;border-radius:0 0 4.2cqw 4.2cqw}.wechat-cover-screen img{display:block;width:100%;height:auto;max-width:none;margin:0;border:0;border-radius:0}
+.wechat-cover-device:before,.wechat-cover-device:after{content:'';position:absolute;width:.2cqw;background:#444;border-radius:.2cqw}.wechat-cover-device:before{left:-.3cqw;top:9cqw;height:7cqw}.wechat-cover-device:after{right:-.3cqw;top:13cqw;height:5cqw}
+/* Four-column archive; keep the home-page selection independent. */
+body[data-page="work"] .project-grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:22px;row-gap:42px}
+body[data-page="work"] .project-caption h3{font-size:17px;line-height:1.45}
+body[data-page="work"] .project-caption p{font-size:11px;line-height:1.6}
+@media(max-width:1000px){body[data-page="work"] .project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){body[data-page="work"] .project-grid{grid-template-columns:minmax(0,1fr);row-gap:32px}}
+body[data-page="work"] .project-grid .card-arrow{display:none}
+
+.wechat-phone-cover:has(img[src="assets/service-guide/0.webp"]){background:#03182b url("assets/service-guide/cover-stars-premium.png") center/cover no-repeat}
+
+/* Companion leave list banner: artwork orange. */
+.wechat-phone-cover:has(img[src="assets/companion/static.png"]){background:radial-gradient(ellipse at 22% 12%,#ffd4a1 0%,#ffb06455 38%,transparent 67%),radial-gradient(ellipse at 85% 90%,#bd430033 0%,transparent 58%),linear-gradient(135deg,#ffb269 0%,#ff8b32 35%,#f66a08 72%,#e95b06 100%)!important}
+
+/* Subtle brightness adjustment for the brochure list cover only. */
+.project-link>img[src="assets/fliggy-brochure/list-cover-space.png"]{filter:brightness(1.08)}

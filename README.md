@@ -1,16 +1,26 @@
-# Big Pineapple Creative
+# 大菠萝创意 · 网站框架 V2
 
-Bilingual static portfolio for 大菠萝创意 / Big Pineapple Creative.
+直接打开 dist/index.html 即可浏览，无需安装依赖或启动服务器。尚未上线。
 
-## Netlify
-- Production branch: main
-- Base directory: repository root
-- Build command: leave empty
-- Publish directory: dist
-- No package installation, API keys or environment variables required.
+## 页面
+- index.html：首页
+- work.html：案例列表及四类筛选
+- project.html?id=01：案例通用模板，通过 id 选择项目
+- services.html：四类服务与合作方式
+- about.html：工作室与工作方式
+- contact.html：联系页，联系方式待补充
 
-Open dist/index.html for a local preview. Languages: ?lang=zh and ?lang=en.
+## 长期维护
+- dist/app.js：所有中英文内容、项目数据、交互。
+- dist/styles.css：全站视觉、响应式与动效。
+- 原有 assets 文件保留，当前框架只使用 CSS 生成的16:9灰色占位图。
+- 新增项目时修改 app.js 中 projects 数组；详情页模板后续可以扩展为每项目独立内容。
+- 不公开虚构的客户、年份、效果数据。示意项目待替换为真实项目。
 
-Contact submissions use FormSubmit. The recipient must activate the form using the confirmation email after the first hosted submission. Delivery is not yet verified.
+## 语言
+显式链接参数 ?lang=zh 或 ?lang=en 优先，其次为用户手动选择，最后使用浏览器语言。导航保留当前语言，详情页切换保留项目 id。自动判断 IP 所在地需上线后配置托管端，目前不进行 IP 查询。
 
-This work-in-progress version includes placeholder projects.
+## 动效
+标题遮罩揭示、滚动进入渐显、卡片悬停、移动导航；尊重系统减少动态效果设置。
+
+此前版本保存在 backups 文件夹中，现有作品素材未删除。

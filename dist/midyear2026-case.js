@@ -1,0 +1,20 @@
+window.renderMidyear2026Case=(t,href)=>{
+ let html=window.renderChancayCase(t,href);
+ const art=`<img src="assets/midyear-2026/artwork.png" width="1080" height="21629" style="opacity:1!important;transform:none!important;visibility:visible!important" alt="${t('中远海运港口2026中期业绩长图','COSCO SHIPPING Ports 2026 interim results infographic')}" decoding="async">`;
+ html=html.replace(/<div class="annual-screen"[\s\S]*?<\/div><div class="annual-homebar"/,`<div class="annual-screen" tabindex="0" role="region" aria-label="${t('可滚动阅读的中期业绩长图','Scrollable interim results infographic')}">${art}</div><div class="annual-homebar"`);
+ html=html.replace(/<div class="annual-expanded">[\s\S]*?<\/div><\/dialog>/,`<div class="annual-expanded">${art}</div></dialog>`);
+ html=html.replace(/<section class="chancay-motion-details">[\s\S]*?<\/section>/,'');
+ html=html.replace(/<button type="button" data-chancay-motion/, '<button hidden type="button" data-chancay-motion');
+ html=html.replace('钱凯港<br>2025 成绩单','中远海运港口<br>2026 中期业绩').replace('Port of Chancay<br>2025 Results','COSCO SHIPPING Ports<br>2026 Interim Results');
+ html=html.replace(/<dd>2025<\/dd>/,'<dd>2026</dd>');
+ html=html.replaceAll('业绩长图 / 动态图表 / 公众号视觉','业绩长图 / 数据可视化 / 公众号视觉').replaceAll('Results infographic / Animated charts / WeChat design','Results infographic / Data visualisation / WeChat design');
+ html=html.replace('以公众号长图梳理钱凯港的年度运营表现，将业务数据、航线网络与港口场景串联为连续的阅读叙事。红蓝色彩建立信息层级，四处动态图表结合折线、数字与船舶图像，让不同业务板块的运营趋势更直观。','围绕中远海运港口2026年中期业绩，以公众号长图串联全球布局、上半年业绩、业务进展与未来展望。通过分层排版、重点数字与图表，将财务和运营信息转化为清晰、连贯的阅读体验，结合港口实景建立企业传播的专业感。');
+ html=html.replace('A long-form WeChat infographic connecting Chancay’s annual operating results, shipping network and port environments. Red and blue structure the information, while four animated charts combine lines, figures and vessel imagery to bring different operating trends into focus.','A long-form WeChat infographic presenting COSCO SHIPPING Ports’ 2026 interim results, global footprint, business developments and outlook. Clear hierarchy, key figures, charts and port photography create a coherent reading experience.');
+ html=html.replaceAll('钱凯港完整作品','2026中期业绩完整作品').replaceAll('Complete Chancay artwork','Complete 2026 interim results artwork').replaceAll('钱凯港 · 2025 成绩单','中远海运港口 · 2026 中期业绩').replaceAll('Chancay · 2025 Results','COSCO SHIPPING Ports · 2026 Interim Results');
+ html=html.replace('<section class="annual-stage chancay-stage">','<section class="annual-stage chancay-stage midyear-stage">');
+ const items=[['overview','上半年业绩概览','Interim performance overview'],['throughput','分地区吞吐量','Throughput by region'],['revenue','控股码头收入','Revenue highlights'],['esg','ESG与企业荣誉','ESG and corporate recognition']];
+ const details=`<section class="chancay-motion-details midyear-details"><div class="chancay-motion-copy"><h2>${t('让业绩信息，清晰呈现。','Performance, clearly presented.')}</h2><p>${t('从主题封面、关键数字到区域表现与未来展望，呈现长图中的视觉细节。<br>通过数字层级、图表与实景图像，让不同信息各有重点。','Selected details showcase the cover, key figures, regional performance and outlook.<br>Typography, charts and photography establish a clear focus for each topic.')}</p></div><img class="midyear-composite" src="assets/midyear-2026/detail-layout-tight.jpg" alt="${t('2026中期业绩视觉细节：封面、业绩概览、地区吞吐量与未来展望','2026 interim results: cover, performance overview, regional throughput and outlook')}" style="display:block;width:100%;height:auto;aspect-ratio:auto;opacity:1!important;transform:none!important;visibility:visible!important"></section>`;
+ html=html.replace('<section class="chancay-qr-footer">',details+'<section class="chancay-qr-footer">');
+ html=html.replace(/<div class="chancay-qr-placeholder"[\s\S]*?<\/div>/,`<a href="https://mp.weixin.qq.com/s/bA1cdACbvaC2aEsR4QUNcA" target="_blank" rel="noopener noreferrer" aria-label="2026中期业绩公众号原文"><img src="assets/midyear-2026/wechat-qr.png" alt="扫描二维码查看2026中期业绩公众号原文" width="200" height="200" style="display:block;width:160px;height:160px;opacity:1!important;transform:none!important;margin:auto"></a>`);
+ return html;
+};
